@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>New Project</title>
+  <title>LuckyChat</title>
   <meta name="author" content="Peng Zhong">
   <link rel="stylesheet" media="screen" href="c/style.css?v=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
@@ -11,17 +11,119 @@
   <script src="http://ajax.cdnjs.com/ajax/libs/backbone.js/0.3.3/backbone-min.js"></script> 
   <script src="js/script.js"></script>
 </head>
-
 <body>
 
-<header>
-  <h1><a href="#">Clean Slate</a></h1>
+<header class="site">
+  <nav>
+    <h1 id="branding"><a href="#">LuckyChat</a></h1>
+    <ul class="site">
+      <li><a href="#">Help</a>
+      <li><a href="#">About</a>
+    </ul>
+  </nav>
 </header>
 
-<div class="content">
-  <p>Hi!</p>
+<div class="site content">
+  <p class="tagline">Discover mutual attraction. Anonymously.</p>
+  <form class="add friend">
+    <input type="text" placeholder="Name a crush. Or three.">
+    <input type="submit" value="Add">
+  </form>
+
+  <section class="admirers">
+    <header>
+      <h1>Your <span>admirers</span></h1>
+    </header>
+    <ul class="people">
+      <li class="person">
+        <a class="person" href="#">
+          <span class="portrait"></span>
+          <span class="name">William Johnson</span>
+          <span class="location">Location</span>
+        </a>
+      <li class="person">
+        <a class="person" href="#">
+          <span class="portrait"></span>
+          <span class="name">Stephen King</span>
+          <span class="location">Location</span>
+        </a>
+      <li class="person">
+        <a class="person" href="#">
+          <span class="portrait"></span>
+          <span class="name">Edward Cullen</span>
+          <span class="location">Location</span>
+        </a>
+    </ul>
+  </section>
+
+  <section class="crushes">
+    <header>
+      <h1>Your <span>crushes</span></h1>
+    </header>
+    <ul class="people">
+      <li class="person">
+        <a class="person" href="#">
+          <span class="portrait"></span>
+          <span class="name">John Williams</span>
+          <span class="location">Location</span>
+        </a>
+      <li class="person">
+        <a class="person" href="#">
+          <span class="portrait"></span>
+          <span class="name">Jane Lear</span>
+          <span class="location">Location</span>
+        </a>
+      <li class="person">
+        <a class="person" href="#">
+          <span class="portrait"></span>
+          <span class="name">Steve Jobs</span>
+          <span class="location">Location</span>
+        </a>
+      <li class="person">
+        <a class="person" href="#">
+          <span class="portrait"></span>
+          <span class="name">Kristen Stewart</span>
+          <span class="location">Location</span>
+        </a>
+      <li class="person">
+        <a class="person" href="#">
+          <span class="portrait"></span>
+          <span class="name">Jake Black</span>
+          <span class="location">Location</span>
+        </a>
+    </ul>
+  </section>
+
+  <section class="mutual">
+    <header>
+      <h1>Let the sparks fly</h1>
+    </header>
+    <ul class="people">
+      <li class="person">
+        <a class="person" href="#">
+          <span class="portrait"></span>
+          <span class="name">William Johnson</span>
+          <span class="location">Location</span>
+        </a>
+      <li class="person">
+        <a class="person" href="#">
+          <span class="portrait"></span>
+          <span class="name">Stephen King</span>
+          <span class="location">Location</span>
+        </a>
+      <li class="person">
+        <a class="person" href="#">
+          <span class="portrait"></span>
+          <span class="name">Edward Cullen</span>
+          <span class="location">Location</span>
+        </a>
+    </ul>
+  </section>
 </div>
 
-<footer>
+<footer class="site">
   <p>&copy; 2011 <a href="//nylira.com">Peng Zhong</a></p>
 </footer>
+
+</body>
+</html>

@@ -170,28 +170,8 @@ spa.namp {
 *::-webkit-selection {
   background: #ffffe0;
 }
-::-webkit-scrollbar {
-  width: 0.5em;
-  height: 0.5em;
-}
-::-webkit-scrollbar-button:start:decrement,
-::-webkit-scrollbar-button:start:increement {
-  height: 0px;
-  display: block;
-  background: transparent;
-}
-::-webkit-scrollbar-track-piece {
-  background: transparent;
-}
-::-webkit-scrollbar-thumb:vertical {
-  height: 40px;
-  background: rgba(0,0,0,0.3);
-  -webkit-border-radius: 0.25em;
-  -moz-border-radius: 0.25em;
-  border-radius: 0.25em;
-}
 a {
-  color: #0be;
+  color: #f05;
   text-decoration: none;
 }
 a:hover,
@@ -209,17 +189,166 @@ body {
   background: #fff;
   overflow-y: scroll;
 }
-body .content {
-  width: 200px;
-  height: 100px;
+body header.site {
+  height: 45px;
+  line-height: 45px;
+  border-top: 3px solid #f05;
+  border-bottom: 1px solid #eee;
+}
+body header.site nav {
+  width: 960px;
   margin: 0 auto;
-  background: #f00;
-  font-size: 56px;
-  border-top: 5px solid #000;
-  border-right: 5px solid #f00;
-  border-bottom: 5px solid #0f0;
-  border-left: 5px solid #00f;
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  zoom: 1;
+  zoom: 1;
+}
+body header.site nav:before,
+body header.site nav:after {
+  content: "";
+  display: table;
+}
+body header.site nav:after {
+  clear: both;
+}
+body header.site nav:before,
+body header.site nav:after {
+  content: "";
+  display: table;
+}
+body header.site nav:after {
+  clear: both;
+}
+body header.site nav h1#branding {
+  float: left;
+}
+body header.site nav h1#branding a {
+  font-weight: bold;
+  padding: 0 0.5em;
+  color: #333;
+}
+body header.site nav ul.site {
+  float: right;
+}
+body header.site nav ul.site li {
+  float: left;
+}
+body header.site nav ul.site li a {
+  display: block;
+  padding: 0 1em;
+  height: 3em;
+  line-height: 3em;
+  color: #999;
+}
+body .content {
+  width: 960px;
+  margin: 0 auto;
+  zoom: 1;
+  padding: 4em 0;
+}
+body .content:before,
+body .content:after {
+  content: "";
+  display: table;
+}
+body .content:after {
+  clear: both;
+}
+body .content p.tagline {
+  font: bold 6em/1.2 "Helvetica Neue", Arial, Helvetica, sans-serif;
+  letter-spacing: -4px;
+  padding: 0 7px;
+}
+body .content form {
+  margin: 4em 0;
+  zoom: 1;
+}
+body .content form:before,
+body .content form:after {
+  content: "";
+  display: table;
+}
+body .content form:after {
+  clear: both;
+}
+body .content form input {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: block;
+  float: left;
+  padding: 0 0.5em;
+  margin: 0 7px;
+}
+body .content form input[type=text] {
+  font: 150%/2 "Helvetica Neue", Arial, Helvetica, sans-serif;
+  width: 480px;
+  border: 1px solid #ccc;
+}
+body .content form input[type=submit] {
+  width: 80px;
+  font: bold 150%/2 "Helvetica Neue", Arial, Helvetica, sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ff0040), color-stop(1, #b3002d));
+  background: -webkit-linear-gradient(top, #ff0040 0%, #b3002d 100%);
+  background: -moz-linear-gradient(top, #ff0040 0%, #b3002d 100%);
+  background: linear-gradient(top, #ff0040 0%, #b3002d 100%);
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  border: none;
+}
+body section {
+  width: 320px;
+  float: left;
+  -webkit-box-sizing: ;
+  -moz-box-sizing: ;
+  box-sizing: ;
+}
+body section header {
+  margin: 0 0 2em;
+}
+body section header h1 {
+  font-size: 150%;
+  padding: 0 7px;
+}
+body section ul.people li.person a.person {
+  display: block;
+  zoom: 1;
+  padding: 0.5em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: ;
+  -moz-transition: ;
+}
+body section ul.people li.person a.person:before,
+body section ul.people li.person a.person:after {
+  content: "";
+  display: table;
+}
+body section ul.people li.person a.person:after {
+  clear: both;
+}
+body section ul.people li.person a.person span {
+  display: block;
+}
+body section ul.people li.person a.person span.portrait {
+  height: 50px;
+  width: 50px;
+  float: left;
+  background: #ccc;
+  margin-right: 0.5em;
+}
+body section ul.people li.person a.person span.name {
+  color: #333;
+  font-weight: bold;
+}
+body section ul.people li.person a.person span.location {
+  font-size: 80%;
+  color: #999;
+}
+body section ul.people li.person a.person:hover {
+  background: #eee;
+}
+body section ul.people li.person a.person:hover span.name {
+  color: #f05;
 }

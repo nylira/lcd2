@@ -2,14 +2,15 @@
 @import 'm/all'
 
 x = 14px
+txt = #333
 
 df()
   s x
   lh 1.5
   ff sans
-  c #333
+  c txt
 
-link = #0be
+link = hsl(340,100,50)
 hover = #0cf
 
 a
@@ -26,11 +27,94 @@ body
   bg #fff
   oy scroll
 
+  header.site
+    lhh x*3 + 3px
+    bt 3px solid link
+    bb 1px solid #eee
+    nav
+      cnt()
+      clearfix()
+      h1#branding
+        float left
+        a
+          fw bold
+          p 0 .5em
+          c txt
+      ul.site
+        float right
+        li
+          float left
+          a
+            display block
+            p 0 1em
+            lhh 3em
+            c #999
+
   .content
-    w 200px
-    h 100px
-    m 0 auto
-    bg #f00
-    s x*4
-    bz 5px #000 #f00 #0f0 #00f
-    abs top 20px right 20px
+    cnt()
+    p 4em 0
+
+    p.tagline
+      f bold 6em/1.2 sans
+      ls -4px
+      p 0 x*.5
+
+    form
+      m 4em 0
+      clearfix()
+      input
+        bxs()
+        display block
+        float left
+        p 0 .5em
+        m 0 x*.5
+
+        &[type=text]
+          f 150%/2 sans
+          span 6
+          b 1px solid #ccc
+        
+        &[type=submit]
+          span 1
+          f bold 150%/2 sans
+          background linear-gradient(top, hsl(345,100,50), hsl(345,100,35))
+          c #fff
+          aa()
+          border none
+
+  section
+    col 4
+
+    header
+      m 0 0 2em
+      h1
+        s 150%
+        p 0 x*.5
+
+    ul.people
+      li.person
+        a.person
+          display block
+          clearfix()
+          p .5em
+          border-radius 3px
+          transition()
+          span
+            display block
+            &.portrait
+              r 50px
+              float left
+              bg #ccc
+              mr .5em
+            &.name
+              color txt
+              fw bold
+            &.location
+              s 80%
+              c #999
+
+          &:hover
+            bg #eee
+            span
+              &.name
+                c link
