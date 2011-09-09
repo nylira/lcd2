@@ -10,17 +10,15 @@ df()
   ff sans
   c txt
 
-link = hsl(340,100,50)
-hover = #0cf
+lhue = 340
+link = hsl(lhue,100,50)
+hover = hsl(lhue,100,60)
 
 a
   c link
   td none
   &:hover, &:focus
     c hover
-
-html
-  height 100%
 
 body
   df()
@@ -49,72 +47,132 @@ body
             p 0 1em
             lhh 3em
             c #999
+  footer.site
+    bt 1px solid #ddd
+    cnt()
+    pt 1em
+    p
+      f 85%/1.5 sans
+      c #999
+      a
+        c #999
 
   .content
     cnt()
     p 4em 0
 
-    p.tagline
-      f bold 6em/1.2 sans
-      ls -4px
-      p 0 x*.5
+  &.landing
+    .content
+      p 6em 0 8em
+      a.branding
+        d block
+        f bold 6em/1 sans
+        ls -4px
+        ta center
+        w 960px
+        text-indent -999em
+        h 120px
+        bg url(../i/luckychat.png) center top no-repeat
+        span
+          c txt
 
-    form
-      m 4em 0
-      clearfix()
-      input
-        bxs()
-        display block
-        float left
-        p 0 .5em
-        m 0 x*.5
+      .hook
+        h 389px
+        w 640px
+        m 0 auto x*2
+        p x 0
+        d block
+        bt 1px solid #ddd
+        p
+          f 2em/1.5 serif
+          ls -1px
+          ta center
 
-        &[type=text]
-          f 150%/2 sans
-          span 6
-          b 1px solid #ccc
-        
-        &[type=submit]
-          span 1
-          f bold 150%/2 sans
-          background linear-gradient(top, hsl(345,100,50), hsl(345,100,35))
-          c #fff
-          aa()
-          border none
+      iframe
+        h 390px
+        w 640px
+        m 0 auto 2em
+        d none
 
-  section
-    col 4
-
-    header
-      m 0 0 2em
-      h1
-        s 150%
+      a.button
+        d block
+        ta center
+        span 4
+        m 0 auto
+        f bold 1.5em/2.5 sans
+        text-shadow b50 0 2px 5px
+        background linear-gradient(top, hsl(lhue,100,60), hover, link)
+        bb 1px solid b50
+        bt 1px solid w40
+        border-radius .5em
+        c #fff
+        aa()
+        &:hover
+          background linear-gradient(top, hsl(lhue,100,65), hsl(lhue,100,50))
+  
+  &.index
+    .content
+      p.tagline
+        f bold 6em/1.2 sans
+        ls -4px
         p 0 x*.5
 
-    ul.people
-      li.person
-        a.person
+      form
+        m 4em 0
+        clearfix()
+        input
+          bxs()
           display block
-          clearfix()
-          p .5em
-          border-radius 3px
-          transition()
-          span
-            display block
-            &.portrait
-              r 50px
-              float left
-              bg #ccc
-              mr .5em
-            &.name
-              color txt
-              fw bold
-            &.location
-              s 80%
-              c #999
+          float left
+          p 0 .5em
+          m 0 x*.5
 
-          &:hover
-            bg #eee
+          &[type=text]
+            f 150%/2 sans
+            span 6
+            b 1px solid #ccc
+          
+          &[type=submit]
+            span 1
+            f bold 150%/2 sans
+            background linear-gradient(top, hsl(345,100,50), hsl(345,100,35))
+            c #fff
+            aa()
+            border none
+
+    section
+      col 4
+
+      header
+        m 0 0 2em
+        h1
+          s 150%
+          p 0 x*.5
+
+      ul.people
+        li.person
+          a.person
+            display block
+            clearfix()
+            p .5em
+            border-radius 3px
+            transition()
             span
+              display block
+              &.portrait
+                r 50px
+                float left
+                bg #ccc
+                mr .5em
               &.name
-                c link
+                color txt
+                fw bold
+              &.location
+                s 80%
+                c #999
+
+            &:hover
+              bg #eee
+              span
+                &.name
+                  c link

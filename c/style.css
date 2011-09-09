@@ -1,354 +1,67 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: top;
-  outline: none;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: none;
-}
-del {
-  text-decoration: line-through;
-}
-ins {
-  background-color: #ff9;
-  color: #000;
-  text-decoration: none;
-}
-mark {
-  background-color: #ff9;
-  color: #000;
-  font-style: italic;
-  font-weight: bold;
-}
-abbr[title],
-dfn[title] {
-  border-bottom: 1px dotted;
-  cursor: help;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-ul,
-ol {
-  list-style: none;
-}
-:focus {
-  outline: none;
-}
-strong {
-  font-weight: bold;
-}
-em {
-  font-style: italic;
-}
-spa.namp {
-  font-family: Baskerville, Palatino, "Book Antiqua", Georgia, "serif";
-  font-style: italic;
-}
-*::selection {
-  background: #ffffe0;
-}
-*::-moz-selection {
-  background: #ffffe0;
-}
-*::-webkit-selection {
-  background: #ffffe0;
-}
-a {
-  color: #f05;
-  text-decoration: none;
-}
-a:hover,
-a:focus {
-  color: #0cf;
-}
-html {
-  height: 100%;
-}
-body {
-  font-size: 14px;
-  line-height: 1.5;
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-  color: #333;
-  background: #fff;
-  overflow-y: scroll;
-}
-body header.site {
-  height: 45px;
-  line-height: 45px;
-  border-top: 3px solid #f05;
-  border-bottom: 1px solid #eee;
-}
-body header.site nav {
-  width: 960px;
-  margin: 0 auto;
-  zoom: 1;
-  zoom: 1;
-}
-body header.site nav:before,
-body header.site nav:after {
-  content: "";
-  display: table;
-}
-body header.site nav:after {
-  clear: both;
-}
-body header.site nav:before,
-body header.site nav:after {
-  content: "";
-  display: table;
-}
-body header.site nav:after {
-  clear: both;
-}
-body header.site nav h1#branding {
-  float: left;
-}
-body header.site nav h1#branding a {
-  font-weight: bold;
-  padding: 0 0.5em;
-  color: #333;
-}
-body header.site nav ul.site {
-  float: right;
-}
-body header.site nav ul.site li {
-  float: left;
-}
-body header.site nav ul.site li a {
-  display: block;
-  padding: 0 1em;
-  height: 3em;
-  line-height: 3em;
-  color: #999;
-}
-body .content {
-  width: 960px;
-  margin: 0 auto;
-  zoom: 1;
-  padding: 4em 0;
-}
-body .content:before,
-body .content:after {
-  content: "";
-  display: table;
-}
-body .content:after {
-  clear: both;
-}
-body .content p.tagline {
-  font: bold 6em/1.2 "Helvetica Neue", Arial, Helvetica, sans-serif;
-  letter-spacing: -4px;
-  padding: 0 7px;
-}
-body .content form {
-  margin: 4em 0;
-  zoom: 1;
-}
-body .content form:before,
-body .content form:after {
-  content: "";
-  display: table;
-}
-body .content form:after {
-  clear: both;
-}
-body .content form input {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  display: block;
-  float: left;
-  padding: 0 0.5em;
-  margin: 0 7px;
-}
-body .content form input[type=text] {
-  font: 150%/2 "Helvetica Neue", Arial, Helvetica, sans-serif;
-  width: 480px;
-  border: 1px solid #ccc;
-}
-body .content form input[type=submit] {
-  width: 80px;
-  font: bold 150%/2 "Helvetica Neue", Arial, Helvetica, sans-serif;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ff0040), color-stop(1, #b3002d));
-  background: -webkit-linear-gradient(top, #ff0040 0%, #b3002d 100%);
-  background: -moz-linear-gradient(top, #ff0040 0%, #b3002d 100%);
-  background: linear-gradient(top, #ff0040 0%, #b3002d 100%);
-  color: #fff;
-  -webkit-font-smoothing: antialiased;
-  border: none;
-}
-body section {
-  width: 320px;
-  float: left;
-  -webkit-box-sizing: ;
-  -moz-box-sizing: ;
-  box-sizing: ;
-}
-body section header {
-  margin: 0 0 2em;
-}
-body section header h1 {
-  font-size: 150%;
-  padding: 0 7px;
-}
-body section ul.people li.person a.person {
-  display: block;
-  zoom: 1;
-  padding: 0.5em;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  -webkit-transition: ;
-  -moz-transition: ;
-}
-body section ul.people li.person a.person:before,
-body section ul.people li.person a.person:after {
-  content: "";
-  display: table;
-}
-body section ul.people li.person a.person:after {
-  clear: both;
-}
-body section ul.people li.person a.person span {
-  display: block;
-}
-body section ul.people li.person a.person span.portrait {
-  height: 50px;
-  width: 50px;
-  float: left;
-  background: #ccc;
-  margin-right: 0.5em;
-}
-body section ul.people li.person a.person span.name {
-  color: #333;
-  font-weight: bold;
-}
-body section ul.people li.person a.person span.location {
-  font-size: 80%;
-  color: #999;
-}
-body section ul.people li.person a.person:hover {
-  background: #eee;
-}
-body section ul.people li.person a.person:hover span.name {
-  color: #f05;
-}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:top;outline:none;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+del{text-decoration:line-through}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+ul,ol{list-style:none}
+:focus{outline:none}
+strong{font-weight:bold}
+em{font-style:italic}
+spa.namp{font-family:Baskerville,Palatino,"Book Antiqua",Georgia,"serif";font-style:italic}
+*::selection,*::-moz-selection,*::-webkit-selection{background:#ffffe0}
+*::-moz-selection{background:#ffffe0}
+*::-webkit-selection{background:#ffffe0}
+a{color:#f05;text-decoration:none;}
+a:hover,a:focus{color:#f37}
+body{font-size:14px;line-height:1.5;font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;color:#333;background:#fff;overflow-y:scroll;}
+body header.site{height:45px;line-height:45px;border-top:3px solid #f05;border-bottom:1px solid #eee;}
+body header.site nav{width:960px;margin:0 auto;zoom:1;zoom:1;}
+body header.site nav:before,body header.site nav:after{content:"";display:table}
+body header.site nav:after{clear:both}
+body header.site nav:before,body header.site nav:after{content:"";display:table}
+body header.site nav:after{clear:both}
+body header.site nav h1#branding{float:left;}
+body header.site nav h1#branding a{font-weight:bold;padding:0 .5em;color:#333}
+body header.site nav ul.site{float:right;}
+body header.site nav ul.site li{float:left;}
+body header.site nav ul.site li a{display:block;padding:0 1em;height:3em;line-height:3em;color:#999}
+body footer.site{border-top:1px solid #ddd;width:960px;margin:0 auto;zoom:1;padding-top:1em;}
+body footer.site:before,body footer.site:after{content:"";display:table}
+body footer.site:after{clear:both}
+body footer.site p{font:85%/1.5 "Helvetica Neue",Arial,Helvetica,sans-serif;color:#999;}
+body footer.site p a{color:#999}
+body .content{width:960px;margin:0 auto;zoom:1;padding:4em 0}
+body .content:before,body .content:after{content:"";display:table}
+body .content:after{clear:both}
+body.landing .content{padding:6em 0 8em;}
+body.landing .content a.branding{display:block;font:bold 6em/1 "Helvetica Neue",Arial,Helvetica,sans-serif;letter-spacing:-4px;text-align:center;width:960px;text-indent:-999em;height:120px;background:url("../i/luckychat.png") center top no-repeat;}
+body.landing .content a.branding span{color:#333}
+body.landing .content .hook{height:389px;width:640px;margin:0 auto 28px;padding:14px 0;display:block;border-top:1px solid #ddd;}
+body.landing .content .hook p{font:2em/1.5 Georgia,"serif";letter-spacing:-1px;text-align:center}
+body.landing .content iframe{height:390px;width:640px;margin:0 auto 2em;display:none}
+body.landing .content a.button{display:block;text-align:center;width:320px;margin:0 auto;font:bold 1.5em/2.5 "Helvetica Neue",Arial,Helvetica,sans-serif;text-shadow:rgba(0,0,0,0.50) 0 2px 5px;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #f37), color-stop(0.33333333333333326, #f37), color-stop(1, #f05));background:-webkit-linear-gradient(top, #f37 0%, #f37 33.33333333333333%, #f05 100%);background:-moz-linear-gradient(top, #f37 0%, #f37 33.33333333333333%, #f05 100%);background:linear-gradient(top, #f37 0%, #f37 33.33333333333333%, #f05 100%);border-bottom:1px solid rgba(0,0,0,0.50);border-top:1px solid rgba(255,255,255,0.40);-webkit-border-radius:.5em;-moz-border-radius:.5em;border-radius:.5em;color:#fff;-webkit-font-smoothing:antialiased;}
+body.landing .content a.button:hover{background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #ff4d88), color-stop(1, #f05));background:-webkit-linear-gradient(top, #ff4d88 0%, #f05 100%);background:-moz-linear-gradient(top, #ff4d88 0%, #f05 100%);background:linear-gradient(top, #ff4d88 0%, #f05 100%)}
+body.index .content p.tagline{font:bold 6em/1.2 "Helvetica Neue",Arial,Helvetica,sans-serif;letter-spacing:-4px;padding:0 7px}
+body.index .content form{margin:4em 0;zoom:1;}
+body.index .content form:before,body.index .content form:after{content:"";display:table}
+body.index .content form:after{clear:both}
+body.index .content form input{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;display:block;float:left;padding:0 .5em;margin:0 7px;}
+body.index .content form input[type=text]{font:150%/2 "Helvetica Neue",Arial,Helvetica,sans-serif;width:480px;border:1px solid #ccc}
+body.index .content form input[type=submit]{width:80px;font:bold 150%/2 "Helvetica Neue",Arial,Helvetica,sans-serif;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #ff0040), color-stop(1, #b3002d));background:-webkit-linear-gradient(top, #ff0040 0%, #b3002d 100%);background:-moz-linear-gradient(top, #ff0040 0%, #b3002d 100%);background:linear-gradient(top, #ff0040 0%, #b3002d 100%);color:#fff;-webkit-font-smoothing:antialiased;border:none}
+body.index section{width:320px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;}
+body.index section header{margin:0 0 2em;}
+body.index section header h1{font-size:150%;padding:0 7px}
+body.index section ul.people li.person a.person{display:block;zoom:1;padding:.5em;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;-webkit-transition:;-moz-transition:;}
+body.index section ul.people li.person a.person:before,body.index section ul.people li.person a.person:after{content:"";display:table}
+body.index section ul.people li.person a.person:after{clear:both}
+body.index section ul.people li.person a.person span{display:block;}
+body.index section ul.people li.person a.person span.portrait{height:50px;width:50px;float:left;background:#ccc;margin-right:.5em}
+body.index section ul.people li.person a.person span.name{color:#333;font-weight:bold}
+body.index section ul.people li.person a.person span.location{font-size:80%;color:#999}
+body.index section ul.people li.person a.person:hover{background:#eee;}
+body.index section ul.people li.person a.person:hover span.name{color:#f05}
